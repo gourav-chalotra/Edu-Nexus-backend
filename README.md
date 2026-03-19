@@ -197,14 +197,41 @@ All endpoints return consistent JSON responses:
 
 ## Frontend Integration
 
-The frontend connects via these environment variables:
+### Local setup
+- Backend runs on `http://localhost:${process.env.PORT || 5001}` (default 5001)
+- In frontend `.env` (Vite):
 ```env
 VITE_API_URL=http://localhost:5001/api
 ```
+- In frontend (CRA) `.env`:
+```env
+REACT_APP_API_URL=http://localhost:5001/api
+```
 
-All API calls are made with JWT token in Authorization header:
-```javascript
-Authorization: Bearer <token>
+### Vercel deployment setup
+1. Set backend env in Vercel for frontend (Project Settings → Environment Variables):
+   - `VITE_API_URL=https://edu-nexus-backend.onrender.com/api` (Vite)
+   - or `REACT_APP_API_URL=https://edu-nexus-backend.onrender.com/api` (CRA)
+2. Use this URL in frontend API calls:
+```js
+const API = import.meta.env.VITE_API_URL || process.env.REACT_APP_API_URL;
+fetch(`${API}/leaderboard`, {
+  headers: { Authorization: `Bearer ${token}` },
+});
+```
+3. For backend CORS (in `server.js`), add allowed origins in `.env`:
+```env
+ALLOWED_ORIGINS=http://localhost:5173,https://your-frontend.vercel.app
+```
+
+### Notes
+- In backend `.env`, keep `PORT=5001` for local dev.
+- In frontend, call `${API}/api/...` only if API base includes `/api`.
+- If your backend is proxied or deployed under `/api`, adjust path accordingly.
+
+All API calls must send JWT with header:
+```js
+headers: { Authorization: `Bearer ${token}` }
 ```
 
 ## Development Tips
