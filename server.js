@@ -36,7 +36,11 @@ app.use('/api/progress', progressRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Health check
+// Health checks
+app.get('/health', (req, res) => {
+    res.json({ status: 'OK', message: 'Edu Nexus Server is reachable' });
+});
+
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'Edu Nexus API is running' });
 });
