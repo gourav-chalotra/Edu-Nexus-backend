@@ -58,6 +58,11 @@ const chapterSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     },
+    classLevel: {
+        type: String,
+        required: true,
+        index: true
+    },
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'

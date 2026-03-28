@@ -47,11 +47,17 @@ export const getSubject = async (req, res) => {
             });
         }
 
-        // Get all chapters for this subject
-        const chapters = await Chapter.find({
+        // Get all chapters for this subject filtered by classLevel for students
+        const chapterQuery = {
             subjectId: req.params.id,
             isPublished: true
-        }).sort({ order: 1 });
+        };
+
+        if (req.user && req.user.role === 'student' && req.user.classLevel) {
+            chapterQuery.classLevel = String(req.user.classLevel);
+        }
+
+        const chapters = await Chapter.find(chapterQuery).sort({ order: 1 });
 
         res.json({
             success: true,

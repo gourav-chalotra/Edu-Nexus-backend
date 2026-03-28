@@ -113,21 +113,53 @@ const seedDatabase = async () => {
             { id: 'ch_eng_10_23', title: 'FWW 6. The Making of a Scientist', description: 'Richard Ebright\'s journey.', topics: ['Curiosity', 'Science'], order: 23, videoUrl: 'https://www.youtube.com/embed/q1FbLY15evg' },
             { id: 'ch_eng_10_24', title: 'FWW 7. The Necklace', description: 'Matilda\'s tragic mistake.', topics: ['Greed', 'Illusion', 'Reality'], order: 24, videoUrl: 'https://www.youtube.com/embed/TtZMjKuuF4Q' },
             { id: 'ch_eng_10_25', title: 'FWW 8. Bholi', description: 'Sulekha\'s transformation through education.', topics: ['Education', 'Empowerment'], order: 25, videoUrl: 'https://www.youtube.com/embed/Ekje8q1tk1k' },
-            { id: 'ch_eng_10_26', title: 'FWW 9. The Book That Saved the Earth', description: 'Martian invasion and nursery rhymes.', topics: ['Humour', 'Books'], order: 26, videoUrl: 'https://www.youtube.com/embed/Si8uiDGqSrw' }
+            { id: 'ch_eng_10_26', title: 'FWW 9. The Book That Saved the Earth', description: 'Martian invasion and nursery rhymes.', topics: ['Humour', 'Books'], order: 26, videoUrl: 'https://www.youtube.com/embed/Si8uiDGqSrw' },
+
+            // --- Class 9 BEEHIVE (Prose) ---
+            { id: 'ch_eng_9_1', title: 'Beehive 1: The Fun They Had', description: 'A story about the future schools and robots.', topics: ['Future School', 'Old Schools', 'Robots'], order: 101, videoUrl: 'https://www.youtube.com/embed/qay0mvxvzKE' },
+            { id: 'ch_eng_9_2', title: 'Beehive 2: The Sound of Music', description: 'Evelyn Glennie and Bismillah Khan.', topics: ['Music', 'Determination', 'Inspiration'], order: 102, videoUrl: 'https://www.youtube.com/embed/Rk4Ryb9h7G4' },
+            { id: 'ch_eng_9_3', title: 'Beehive 3: The Little Girl', description: 'Kezia\'s realization about her father.', topics: ['Family', 'Fear', 'Understanding'], order: 103, videoUrl: 'https://www.youtube.com/embed/2rXhT8W8m3Y' },
+            { id: 'ch_eng_9_4', title: 'Beehive 4: A Truly Beautiful Mind', description: 'A short biography of Albert Einstein.', topics: ['Science', 'Peace', 'Einstein'], order: 104, videoUrl: 'https://www.youtube.com/embed/1XQ5nC9bV2Q' },
+            { id: 'ch_eng_9_5', title: 'Beehive 5: The Snake and the Mirror', description: 'A humorous story of a doctor and a snake.', topics: ['Humour', 'Doctor', 'Mirror'], order: 105, videoUrl: 'https://www.youtube.com/embed/QKqfP0g7y6A' },
+            { id: 'ch_eng_9_6', title: 'Beehive 6: My Childhood', description: 'Excerpts from APJ Abdul Kalam\'s Wings of Fire.', topics: ['Childhood', 'Values', 'Kalam'], order: 106, videoUrl: 'https://www.youtube.com/embed/KpS8zK0l9Z0' },
+            { id: 'ch_eng_9_7', title: 'Beehive 7: Packing', description: 'A humorous extract from Three Men in a Boat.', topics: ['Humour', 'Chaos', 'Packing'], order: 107, videoUrl: 'https://www.youtube.com/embed/Z3pXxG9o3kQ' },
+            { id: 'ch_eng_9_8', title: 'Beehive 8: Reach for the Top', description: 'Santosh Yadav and Maria Sharapova.', topics: ['Ambition', 'Sports', 'Success'], order: 108, videoUrl: 'https://www.youtube.com/embed/0y7s7Jc9Z9g' },
+            { id: 'ch_eng_9_9', title: 'Beehive 9: The Bond of Love', description: 'The story of a sloth bear named Bruno.', topics: ['Animals', 'Love', 'Bond'], order: 109, videoUrl: 'https://www.youtube.com/embed/Yy8mQy8V5eQ' },
+            { id: 'ch_eng_9_10', title: 'Beehive 10: Kathmandu', description: 'Travelogue extract about Kathmandu.', topics: ['Travel', 'Temple', 'Culture'], order: 110, videoUrl: 'https://www.youtube.com/embed/8rR6Z9x6Z5Y' },
+            { id: 'ch_eng_9_11', title: 'Beehive 11: If I Were You', description: 'A play about a playwright and an intruder.', topics: ['Wit', 'Play', 'Identity'], order: 111, videoUrl: 'https://www.youtube.com/embed/QfJ7pXz5lWQ' },
+
+            // --- Class 9 MOMENTS ---
+            { id: 'ch_mom_9_1', title: 'Moments 1: The Lost Child', description: 'A child\'s longing for parents at a fair.', topics: ['Fair', 'Parents', 'Desire'], order: 201, videoUrl: 'https://www.youtube.com/embed/H2k9Wm7kP5Y' },
+            { id: 'ch_mom_9_2', title: 'Moments 2: The Adventures of Toto', description: 'A mischievous monkey\'s antics.', topics: ['Pets', 'Mischief', 'Monkey'], order: 202, videoUrl: 'https://www.youtube.com/embed/7m9l2FZ2Z6E' },
+            { id: 'ch_mom_9_3', title: 'Moments 3: Iswaran the Storyteller', description: 'A natural storyteller and his narratives.', topics: ['Stories', 'Ghost', 'Folklore'], order: 203, videoUrl: 'https://www.youtube.com/embed/Z6W3Y1f8n9Q' },
+            { id: 'ch_mom_9_4', title: 'Moments 4: In the Kingdom of Fools', description: 'A kingdom where everything is unusual.', topics: ['Fools', 'Justice', 'Wisdom'], order: 204, videoUrl: 'https://www.youtube.com/embed/6y3zY7f5k8A' },
+            { id: 'ch_mom_9_5', title: 'Moments 5: The Happy Prince', description: 'Sacrifice and kindness of a statue.', topics: ['Kindness', 'Sacrifice', 'Poverty'], order: 205, videoUrl: 'https://www.youtube.com/embed/3Yw5h8Z9m4Q' },
+            { id: 'ch_mom_9_6', title: 'Moments 6: Weathering the Storm in Ersama', description: 'Prashant\'s leadership during a cyclone.', topics: ['Courage', 'Leadership', 'Cyclone'], order: 206, videoUrl: 'https://www.youtube.com/embed/9W7k3Y8m2P0' },
+            { id: 'ch_mom_9_7', title: 'Moments 7: The Last Leaf', description: 'Art, hope, and sacrifice.', topics: ['Art', 'Pneumonia', 'Faith'], order: 207, videoUrl: 'https://www.youtube.com/embed/2Z8h5W7k9FQ' },
+            { id: 'ch_mom_9_8', title: 'Moments 8: A House Is Not a Home', description: 'Coping with loss and starting anew.', topics: ['Loss', 'Home', 'School'], order: 208, videoUrl: 'https://www.youtube.com/embed/5Y9m2X7k3ZQ' },
+            { id: 'ch_mom_9_9', title: 'Moments 9: The Accidental Tourist', description: 'Humorous travel mishaps of the author.', topics: ['Humour', 'Travel', 'Accidents'], order: 209, videoUrl: 'https://www.youtube.com/embed/8X7m5Z2k9WQ' },
+            { id: 'ch_mom_9_10', title: 'Moments 10: The Beggar', description: 'The transformation of a drunkard.', topics: ['Compassion', 'Work', 'Change'], order: 210, videoUrl: 'https://www.youtube.com/embed/4Z7k2X9m5WQ' }
         ];
 
-        await Promise.all(englishChaptersData.map(ch =>
-            Chapter.create({
+        await Promise.all(englishChaptersData.map(ch => {
+            // Determine classLevel based on ID prefix
+            let classLevel = '10';
+            if (ch.id.includes('_9_') || ch.id.includes('_mom_')) {
+                classLevel = '9';
+            }
+
+            return Chapter.create({
                 ...ch,
                 subjectId: 'eng_icse',
+                classLevel,
                 isPublished: true,
                 content: {
                     type: ch.videoUrl ? 'video' : 'text',
                     body: ch.description,
                     videoUrl: ch.videoUrl || ''
                 }
-            })
-        ));
+            });
+        }));
         console.log('✅ Created English chapters');
 
         // Class 10 Maths Chapters
@@ -271,6 +303,7 @@ const seedDatabase = async () => {
             Chapter.create({
                 ...ch,
                 subjectId: 'math_icse',
+                classLevel: '10',
                 isPublished: true
             })
         ));
@@ -461,7 +494,158 @@ const seedDatabase = async () => {
                 { id: 3, type: 'mcq', question: 'Book saved —', options: ['Mars', 'Earth', 'Humans', 'Aliens'], correctAnswer: 'Earth', points: 100 },
                 { id: 4, type: 'mcq', question: 'Noodle was —', options: ['Leader', 'Scientist', 'Captain', 'Enemy'], correctAnswer: 'Leader', points: 100 },
                 { id: 5, type: 'mcq', question: 'Theme —', options: ['Power of books', 'War', 'Fear', 'Science'], correctAnswer: 'Power of books', points: 100 }
-            ]}
+            ]},
+
+            // --- Class 9 BEEHIVE Quizzes ---
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_1', title: 'Quiz: The Fun They Had', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Who found the book?', options: ['Margie', 'Tommy', 'Teacher', 'Mother'], correctAnswer: 'Tommy', points: 100 },
+                { id: 2, type: 'mcq', question: 'Margie was:', options: ['10 years old', '11 years old', '12 years old', '13 years old'], correctAnswer: '11 years old', points: 100 },
+                { id: 3, type: 'mcq', question: 'The book was about:', options: ['Future school', 'Old schools', 'Robots', 'Science'], correctAnswer: 'Old schools', points: 100 },
+                { id: 4, type: 'mcq', question: 'Mechanical teacher was:', options: ['Human', 'Robot', 'Friend', 'Principal'], correctAnswer: 'Robot', points: 100 },
+                { id: 5, type: 'mcq', question: 'Margie hated:', options: ['Books', 'School', 'Tommy', 'Games'], correctAnswer: 'School', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_2', title: 'Quiz: The Sound of Music', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Evelyn Glennie was:', options: ['Blind', 'Deaf', 'Dumb', 'Artist'], correctAnswer: 'Deaf', points: 100 },
+                { id: 2, type: 'mcq', question: 'She learned through:', options: ['Hearing', 'Vibrations', 'Reading', 'Watching'], correctAnswer: 'Vibrations', points: 100 },
+                { id: 3, type: 'mcq', question: 'Her mentor was:', options: ['Ron Forbes', 'Einstein', 'Tommy', 'None'], correctAnswer: 'Ron Forbes', points: 100 },
+                { id: 4, type: 'mcq', question: 'She played:', options: ['Piano', 'Percussion', 'Guitar', 'Violin'], correctAnswer: 'Percussion', points: 100 },
+                { id: 5, type: 'mcq', question: 'She inspires:', options: ['Weakness', 'Determination', 'Fear', 'Laziness'], correctAnswer: 'Determination', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_3', title: 'Quiz: The Little Girl', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Kezia feared:', options: ['Mother', 'Father', 'Teacher', 'Friend'], correctAnswer: 'Father', points: 100 },
+                { id: 2, type: 'mcq', question: 'Father punished her for:', options: ['Playing', 'Tearing speech paper', 'Sleeping', 'Talking'], correctAnswer: 'Tearing speech paper', points: 100 },
+                { id: 3, type: 'mcq', question: 'Kezia’s grandmother was:', options: ['Strict', 'Kind', 'Angry', 'Silent'], correctAnswer: 'Kind', points: 100 },
+                { id: 4, type: 'mcq', question: 'Kezia realised father:', options: ['Hated her', 'Had huge heart', 'Was lazy', 'Was weak'], correctAnswer: 'Had huge heart', points: 100 },
+                { id: 5, type: 'mcq', question: 'Kezia made a pin-cushion for:', options: ['Birthday', 'Christmas', 'New Year', 'Diwali'], correctAnswer: 'Birthday', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_4', title: 'Quiz: A Truly Beautiful Mind', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The chapter is about:', options: ['Newton', 'Einstein', 'Tesla', 'Galileo'], correctAnswer: 'Einstein', points: 100 },
+                { id: 2, type: 'mcq', question: 'Einstein was born in:', options: ['Germany', 'France', 'UK', 'USA'], correctAnswer: 'Germany', points: 100 },
+                { id: 3, type: 'mcq', question: 'He called his desk drawer:', options: ['Bureau of theoretical physics', 'Science box', 'Dream drawer', 'Magic box'], correctAnswer: 'Bureau of theoretical physics', points: 100 },
+                { id: 4, type: 'mcq', question: 'He loved:', options: ['War', 'Peace & Democracy', 'Power', 'Money'], correctAnswer: 'Peace & Democracy', points: 100 },
+                { id: 5, type: 'mcq', question: 'He died in:', options: ['1955', '1965', '1945', '1975'], correctAnswer: '1955', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_5', title: 'Quiz: The Snake and the Mirror', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The doctor was a:', options: ['Homeopath', 'Surgeon', 'Dentist', 'Vet'], correctAnswer: 'Homeopath', points: 100 },
+                { id: 2, type: 'mcq', question: 'What entered his room?', options: ['Rat', 'Snake', 'Cat', 'Dog'], correctAnswer: 'Snake', points: 100 },
+                { id: 3, type: 'mcq', question: 'The snake looked in the:', options: ['Window', 'Mirror', 'Bowl', 'Cup'], correctAnswer: 'Mirror', points: 100 },
+                { id: 4, type: 'mcq', question: 'The doctor’s room was:', options: ['Rich', 'Poorly furnished', 'Big', 'Clean'], correctAnswer: 'Poorly furnished', points: 100 },
+                { id: 5, type: 'mcq', question: 'He decided to marry a:', options: ['Thin doctor', 'Fat doctor', 'Rich girl', 'Poor girl'], correctAnswer: 'Fat doctor', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_6', title: 'Quiz: My Childhood', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Kalam was born in:', options: ['Rameswaram', 'Chennai', 'Madurai', 'Kochi'], correctAnswer: 'Rameswaram', points: 100 },
+                { id: 2, type: 'mcq', question: 'His father was:', options: ['Jainulabdeen', 'Ahmed', 'Ali', 'Osman'], correctAnswer: 'Jainulabdeen', points: 100 },
+                { id: 3, type: 'mcq', question: 'Kalam earned by selling:', options: ['Tamarind seeds', 'Newspapers', 'Books', 'Fruits'], correctAnswer: 'Tamarind seeds', points: 100 },
+                { id: 4, type: 'mcq', question: 'His best friends were:', options: ['Hindu', 'Muslim', 'Sikh', 'Christian'], correctAnswer: 'Hindu', points: 100 },
+                { id: 5, type: 'mcq', question: 'Kalam became:', options: ['Doctor', 'Scientist/President', 'Teacher', 'Pilot'], correctAnswer: 'Scientist/President', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_7', title: 'Quiz: Packing', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The narrator is:', options: ['Jerome', 'George', 'Harris', 'Tommy'], correctAnswer: 'Jerome', points: 100 },
+                { id: 2, type: 'mcq', question: 'Montmorency was a:', options: ['Cat', 'Dog', 'Bird', 'Rabbit'], correctAnswer: 'Dog', points: 100 },
+                { id: 3, type: 'mcq', question: 'Harris & George broke:', options: ['Cups', 'Mirror', 'Bed', 'Chair'], correctAnswer: 'Cups', points: 100 },
+                { id: 4, type: 'mcq', question: 'Packing was:', options: ['Orderly', 'Chaotic', 'Fast', 'Easy'], correctAnswer: 'Chaotic', points: 100 },
+                { id: 5, type: 'mcq', question: 'Montmorency sat on:', options: ['Jam', 'Hampers', 'Eggs', 'Butter'], correctAnswer: 'Jam', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_8', title: 'Quiz: Reach for the Top', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Santosh Yadav climbed:', options: ['Everest', 'K2', 'Lhotse', 'Makalu'], correctAnswer: 'Everest', points: 100 },
+                { id: 2, type: 'mcq', question: 'She was born in:', options: ['Haryana', 'Punjab', 'UP', 'Delhi'], correctAnswer: 'Haryana', points: 100 },
+                { id: 3, type: 'mcq', question: 'Maria Sharapova is a:', options: ['Tennis player', 'Cricketer', 'Swimmer', 'Runner'], correctAnswer: 'Tennis player', points: 100 },
+                { id: 4, type: 'mcq', question: 'Maria is from:', options: ['Russia', 'USA', 'UK', 'China'], correctAnswer: 'Russia', points: 100 },
+                { id: 5, type: 'mcq', question: 'Theme is:', options: ['Hard work', 'Luck', 'Money', 'Magic'], correctAnswer: 'Hard work', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_9', title: 'Quiz: The Bond of Love', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Bruno was a:', options: ['Sloth bear', 'Dog', 'Cat', 'Lion'], correctAnswer: 'Sloth bear', points: 100 },
+                { id: 2, type: 'mcq', question: 'He drank:', options: ['Barium carbonate', 'Milk', 'Juice', 'Water'], correctAnswer: 'Barium carbonate', points: 100 },
+                { id: 3, type: 'mcq', question: 'He was sent to:', options: ['Mysore Zoo', 'Forest', 'City', 'Another home'], correctAnswer: 'Mysore Zoo', points: 100 },
+                { id: 4, type: 'mcq', question: 'The narrator’s wife:', options: ['Missed him', 'Forgot him', 'Hated him', 'Feared him'], correctAnswer: 'Missed him', points: 100 },
+                { id: 5, type: 'mcq', question: 'Finally Bruno came:', options: ['Back home', 'Stayed in Zoo', 'Died', 'Lost'], correctAnswer: 'Back home', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_10', title: 'Quiz: Kathmandu', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Temple mentioned:', options: ['Pashupatinath', 'Golden Temple', 'Lotus Temple', 'None'], correctAnswer: 'Pashupatinath', points: 100 },
+                { id: 2, type: 'mcq', question: 'Kathmandu is in:', options: ['Nepal', 'India', 'Bhutan', 'Tibet'], correctAnswer: 'Nepal', points: 100 },
+                { id: 3, type: 'mcq', question: 'Pashupatinath is for:', options: ['Hindus only', 'All', 'Buddhists', 'Sikhs'], correctAnswer: 'Hindus only', points: 100 },
+                { id: 4, type: 'mcq', question: 'Author saw a:', options: ['Flute seller', 'Fruit seller', 'Bangle seller', 'Magician'], correctAnswer: 'Flute seller', points: 100 },
+                { id: 5, type: 'mcq', question: 'Kathmandu is:', options: ['Noisy/Busy', 'Silent', 'Empty', 'Small'], correctAnswer: 'Noisy/Busy', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_eng_9_11', title: 'Quiz: If I Were You', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The protagonist is:', options: ['Gerrard', 'Intruder', 'Harris', 'George'], correctAnswer: 'Gerrard', points: 100 },
+                { id: 2, type: 'mcq', question: 'Intruder was a:', options: ['Criminal', 'Doctor', 'Teacher', 'Farmer'], correctAnswer: 'Criminal', points: 100 },
+                { id: 3, type: 'mcq', question: 'He wanted to steal:', options: ['Gerrard’s identity', 'Money', 'Car', 'House'], correctAnswer: 'Gerrard’s identity', points: 100 },
+                { id: 4, type: 'mcq', question: 'Gerrard traps him in:', options: ['Cupboard', 'Room', 'Car', 'Bathroom'], correctAnswer: 'Cupboard', points: 100 },
+                { id: 5, type: 'mcq', question: 'Gerrard is a:', options: ['Playwright', 'Detective', 'Spy', 'Police'], correctAnswer: 'Playwright', points: 100 }
+            ]},
+
+            // --- Class 9 MOMENTS Quizzes ---
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_1', title: 'Quiz: The Lost Child', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The child went to a:', options: ['Fair', 'School', 'Market', 'Cinema'], correctAnswer: 'Fair', points: 100 },
+                { id: 2, type: 'mcq', question: 'He wanted a:', options: ['Burfi', 'Toy', 'Balloon', 'All of these'], correctAnswer: 'All of these', points: 100 },
+                { id: 3, type: 'mcq', question: 'He got lost near the:', options: ['Roundabout', 'Entrance', 'Sweet shop', 'Snake charmer'], correctAnswer: 'Roundabout', points: 100 },
+                { id: 4, type: 'mcq', question: 'Who picked him up?', options: ['A kind man', 'Police', 'His father', 'A vendor'], correctAnswer: 'A kind man', points: 100 },
+                { id: 5, type: 'mcq', question: 'In the end, he wanted only:', options: ['His parents', 'Sweets', 'Toys', 'Balloons'], correctAnswer: 'His parents', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_2', title: 'Quiz: The Adventures of Toto', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Toto was a:', options: ['Monkey', 'Dog', 'Cat', 'Rabbit'], correctAnswer: 'Monkey', points: 100 },
+                { id: 2, type: 'mcq', question: 'Grandfather bought him from a:', options: ['Tonga-driver', 'Zoo', 'Market', 'Friend'], correctAnswer: 'Tonga-driver', points: 100 },
+                { id: 3, type: 'mcq', question: 'Toto nearly boiled himself in a:', options: ['Kettle', 'Bucket', 'Tub', 'Pot'], correctAnswer: 'Kettle', points: 100 },
+                { id: 4, type: 'mcq', question: 'He was sold back for:', options: ['3 rupees', '5 rupees', '2 rupees', '10 rupees'], correctAnswer: '3 rupees', points: 100 },
+                { id: 5, type: 'mcq', question: 'Toto was:', options: ['Mischievous', 'Calm', 'Lazy', 'Scared'], correctAnswer: 'Mischievous', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_3', title: 'Quiz: Iswaran the Storyteller', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Iswaran was a:', options: ['Cook', 'Driver', 'Guard', 'Teacher'], correctAnswer: 'Cook', points: 100 },
+                { id: 2, type: 'mcq', question: 'He worked for:', options: ['Mahendra', 'Jerome', 'Gerrard', 'None'], correctAnswer: 'Mahendra', points: 100 },
+                { id: 3, type: 'mcq', question: 'He told a story about a:', options: ['Tusker (Elephant)', 'Ghost', 'Lion', 'Both A & B'], correctAnswer: 'Both A & B', points: 100 },
+                { id: 4, type: 'mcq', question: 'He read popular:', options: ['Tamil thrillers', 'English poems', 'Hindi news', 'Comics'], correctAnswer: 'Tamil thrillers', points: 100 },
+                { id: 5, type: 'mcq', question: 'Mahendra decided to:', options: ['Quit his job', 'Buy a house', 'Fire Iswaran', 'Sleep early'], correctAnswer: 'Quit his job', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_4', title: 'Quiz: In the Kingdom of Fools', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'In this kingdom, day was:', options: ['Night', 'Day', 'Work time', 'Sleep time'], correctAnswer: 'Night', points: 100 },
+                { id: 2, type: 'mcq', question: 'Everything cost one:', options: ['Dudu', 'Rupee', 'Dollar', 'Paisa'], correctAnswer: 'Dudu', points: 100 },
+                { id: 3, type: 'mcq', question: 'Who saved the disciple?', options: ['The Guru', 'The King', 'The Wall', 'The Thief'], correctAnswer: 'The Guru', points: 100 },
+                { id: 4, type: 'mcq', question: 'The Guru became the new:', options: ['King', 'Minister', 'Priest', 'Guard'], correctAnswer: 'King', points: 100 },
+                { id: 5, type: 'mcq', question: 'The King & Minister were:', options: ['Executed', 'Banished', 'Promoted', 'Funny'], correctAnswer: 'Executed', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_5', title: 'Quiz: The Happy Prince', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The Happy Prince was a:', options: ['Statue', 'Real prince', 'Bird', 'Cloud'], correctAnswer: 'Statue', points: 100 },
+                { id: 2, type: 'mcq', question: 'His eyes were made of:', options: ['Sapphires', 'Rubies', 'Gold', 'Diamonds'], correctAnswer: 'Sapphires', points: 100 },
+                { id: 3, type: 'mcq', question: 'The messenger was a:', options: ['Swallow', 'Sparrow', 'Crow', 'Pigeon'], correctAnswer: 'Swallow', points: 100 },
+                { id: 4, type: 'mcq', question: 'The Prince gave away his:', options: ['Gold leaves', 'Jewels', 'Heart', 'Both A & B'], correctAnswer: 'Both A & B', points: 100 },
+                { id: 5, type: 'mcq', question: 'The Prince & Swallow found place in:', options: ['Heaven', 'Museum', 'Park', 'City'], correctAnswer: 'Heaven', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_6', title: 'Quiz: Weathering the Storm', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Main character is:', options: ['Prashant', 'Mahendra', 'Iswaran', 'Valli'], correctAnswer: 'Prashant', points: 100 },
+                { id: 2, type: 'mcq', question: 'The setting is:', options: ['Orissa (Odisha)', 'Bihar', 'Assam', 'Kerala'], correctAnswer: 'Orissa (Odisha)', points: 100 },
+                { id: 3, type: 'mcq', question: 'Natural disaster was:', options: ['Super Cyclone', 'Earthquake', 'Flood', 'Fire'], correctAnswer: 'Super Cyclone', points: 100 },
+                { id: 4, type: 'mcq', question: 'Prashant helped the:', options: ['Orphans & Widows', 'Rich', 'Soldiers', 'Animals'], correctAnswer: 'Orphans & Widows', points: 100 },
+                { id: 5, type: 'mcq', question: 'He showed great:', options: ['Leadership', 'Fear', 'Greed', 'Laziness'], correctAnswer: 'Leadership', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_7', title: 'Quiz: The Last Leaf', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'Johnsy suffered from:', options: ['Pneumonia', 'Fever', 'Cold', 'Malaria'], correctAnswer: 'Pneumonia', points: 100 },
+                { id: 2, type: 'mcq', question: 'She thought she’d die when:', options: ['Last leaf fell', 'Sun set', 'Snow fell', 'Bird flew'], correctAnswer: 'Last leaf fell', points: 100 },
+                { id: 3, type: 'mcq', question: 'Old artist was:', options: ['Behrman', 'Sue', 'Johnsy', 'None'], correctAnswer: 'Behrman', points: 100 },
+                { id: 4, type: 'mcq', question: 'Behrman’s masterpiece was a:', options: ['Painted leaf', 'Portrait', 'Landscape', 'Sculpture'], correctAnswer: 'Painted leaf', points: 100 },
+                { id: 5, type: 'mcq', question: 'Behrman died to:', options: ['Save Johnsy', 'Earn money', 'Become famous', 'None'], correctAnswer: 'Save Johnsy', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_8', title: 'Quiz: A House Is Not a Home', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The author’s house was:', options: ['Burnt down', 'Sold', 'Painted', 'Big'], correctAnswer: 'Burnt down', points: 100 },
+                { id: 2, type: 'mcq', question: 'He lost his:', options: ['Cat', 'Dog', 'Bird', 'Money'], correctAnswer: 'Cat', points: 100 },
+                { id: 3, type: 'mcq', question: 'New friends gave him:', options: ['School supplies', 'Money', 'Food', 'Nothing'], correctAnswer: 'School supplies', points: 100 },
+                { id: 4, type: 'mcq', question: 'His cat was found by a:', options: ['Kind woman', 'Friend', 'Police', 'Neighbor'], correctAnswer: 'Kind woman', points: 100 },
+                { id: 5, type: 'mcq', question: 'He realised:', options: ['Life is good', 'World is cruel', 'He is alone', 'None'], correctAnswer: 'Life is good', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_9', title: 'Quiz: The Accidental Tourist', gameType: 'memory', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The author is:', options: ['Bill Bryson', 'Jerome', 'Gerrard', 'None'], correctAnswer: 'Bill Bryson', points: 100 },
+                { id: 2, type: 'mcq', question: 'He is prone to:', options: ['Accidents', 'Work', 'Sleep', 'Reading'], correctAnswer: 'Accidents', points: 100 },
+                { id: 3, type: 'mcq', question: 'His bag zip got:', options: ['Jammed', 'Broken', 'Lost', 'Open'], correctAnswer: 'Jammed', points: 100 },
+                { id: 4, type: 'mcq', question: 'His mouth turned:', options: ['Blue (ink)', 'Red', 'Black', 'Green'], correctAnswer: 'Blue (ink)', points: 100 },
+                { id: 5, type: 'mcq', question: 'He is a:', options: ['Clumsy traveler', 'Expert pilot', 'Driver', 'Guide'], correctAnswer: 'Clumsy traveler', points: 100 }
+            ]},
+            { subjectId: 'eng_icse', chapterId: 'ch_mom_9_10', title: 'Quiz: The Beggar', gameType: 'shooter', timeLimit: 30, passingScore: 50, isActive: true, questions: [
+                { id: 1, type: 'mcq', question: 'The beggar’s name was:', options: ['Lushkoff', 'Sergei', 'Olga', 'None'], correctAnswer: 'Lushkoff', points: 100 },
+                { id: 2, type: 'mcq', question: 'Sergei was an:', options: ['Advocate', 'Doctor', 'Teacher', 'Farmer'], correctAnswer: 'Advocate', points: 100 },
+                { id: 3, type: 'mcq', question: 'Lushkoff was hired to:', options: ['Chop wood', 'Clean house', 'Drive car', 'Cook'], correctAnswer: 'Chop wood', points: 100 },
+                { id: 4, type: 'mcq', question: 'The wood was actually chopped by:', options: ['Olga', 'Sergei', 'Lushkoff', 'None'], correctAnswer: 'Olga', points: 100 },
+                { id: 5, type: 'mcq', question: 'Lushkoff became a:', options: ['Notary', 'Teacher', 'Doctor', 'Beggar'], correctAnswer: 'Notary', points: 100 }
+            ]},
         ];
 
         // Combine with existing math quizzes array or create separately

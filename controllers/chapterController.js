@@ -5,10 +5,16 @@ import Chapter from '../models/Chapter.js';
 // @access  Private
 export const getChaptersBySubject = async (req, res) => {
     try {
-        const chapters = await Chapter.find({
+        const query = {
             subjectId: req.params.subjectId,
             isPublished: true
-        }).sort({ order: 1 });
+        };
+
+        if (req.user && req.user.role === 'student' && req.user.classLevel) {
+            query.classLevel = String(req.user.classLevel);
+        }
+
+        const chapters = await Chapter.find(query).sort({ order: 1 });
 
         res.json({
             success: true,
@@ -29,11 +35,17 @@ export const getChaptersBySubject = async (req, res) => {
 export const getChapter = async (req, res) => {
     try {
         console.log(`[DEBUG] getChapter: subjectId=${req.params.subjectId}, chapterId=${req.params.chapterId}`);
-        const chapter = await Chapter.findOne({
+        const query = {
             subjectId: req.params.subjectId,
             id: req.params.chapterId,
             isPublished: true
-        });
+        };
+
+        if (req.user && req.user.role === 'student' && req.user.classLevel) {
+            query.classLevel = String(req.user.classLevel);
+        }
+
+        const chapter = await Chapter.findOne(query);
         console.log(`[DEBUG] Found chapter: ${chapter ? chapter.id : 'null'}`);
 
         if (!chapter) {
