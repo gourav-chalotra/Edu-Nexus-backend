@@ -105,10 +105,12 @@ export const getAllStudents = async (req, res) => {
 export const createTeacher = async (req, res) => {
     try {
         const { name, email, password, assignedSubjects } = req.body;
+        console.log('Create Teacher Request:', { name, email, assignedSubjects });
 
         // Check if user exists
         const userExists = await User.findOne({ email });
         if (userExists) {
+            console.log('Teacher creation failed: User already exists');
             return res.status(400).json({
                 success: false,
                 message: 'User already exists with this email'
@@ -117,6 +119,7 @@ export const createTeacher = async (req, res) => {
 
         // Validate assigned subjects
         if (!assignedSubjects || !Array.isArray(assignedSubjects) || assignedSubjects.length === 0) {
+            console.log('Teacher creation failed: No subjects assigned');
             return res.status(400).json({
                 success: false,
                 message: 'At least one subject must be assigned to the teacher'
@@ -147,6 +150,8 @@ export const createTeacher = async (req, res) => {
             assignedSubjects: formattedSubjects
         });
 
+        console.log('Teacher created successfully:', teacher._id);
+
         res.status(201).json({
             success: true,
             data: {
@@ -158,9 +163,10 @@ export const createTeacher = async (req, res) => {
             }
         });
     } catch (error) {
+        console.error('Teacher creation error:', error);
         res.status(500).json({
             success: false,
-            message: error.message
+            message: error.message || 'Server error during teacher creation'
         });
     }
 };
