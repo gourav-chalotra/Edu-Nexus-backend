@@ -7,7 +7,8 @@ import {
     addVideoToChapter,
     addAttachment,
     updateTeacherNote,
-    deleteAttachment
+    deleteAttachment,
+    fastUploadContent
 } from '../controllers/chapterController.js';
 import { protect, authorize } from '../middleware/auth.js';
 
@@ -15,6 +16,9 @@ const router = express.Router();
 
 router.route('/')
     .post(protect, authorize('teacher', 'admin'), createChapter);
+
+router.route('/fast-upload')
+    .post(protect, authorize('teacher', 'admin'), fastUploadContent);
 
 router.route('/subject/:subjectId')
     .get(protect, getChaptersBySubject);
@@ -36,4 +40,3 @@ router.route('/:subjectId/:chapterId/attachments/:attachmentId')
     .delete(protect, authorize('teacher', 'admin'), deleteAttachment);
 
 export default router;
-

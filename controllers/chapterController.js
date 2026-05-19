@@ -1,4 +1,5 @@
 import Chapter from '../models/Chapter.js';
+import Quiz from '../models/Quiz.js';
 
 // @desc    Get all chapters for a subject
 // @route   GET /api/chapters/subject/:subjectId
@@ -273,3 +274,78 @@ export const deleteAttachment = async (req, res) => {
     }
 };
 
+
+// @desc    Fast upload chapter with video and quiz
+// @route   POST /api/chapters/fast-upload
+// @access  Private (Teacher/Admin)
+export const fastUploadContent = async (req, res) => {
+    try {
+        const { subjectId, chapterId, title, description, classLevel, videoUrl, questions } = req.body;
+        
+        // 1. Create or Update Chapter
+        let chapter = await Chapter.findOne({ subjectId, id: chapterId });
+        if (chapter) {
+            chapter.title = title;
+            chapter.description = description || chapter.description;
+            chapter.classLevel = classLevel || chapter.classLevel;
+            chapter.content = {
+                type: 'video',
+                videoUrl: videoUrl || chapter.content.videoUrl,
+                body: chapter.content.body
+            };
+            await chapter.save();
+        } else {
+            chapter = await Chapter.create({
+                id: chapterId,
+                subjectId,
+                title,
+                description: description || 'No description provided',
+                classLevel: classLevel || '10',
+                content: {
+                    type: 'video',
+                    videoUrl: videoUrl || ''
+                },
+                createdBy: req.user._id
+            });
+        }
+
+        // 2. Create or Update Quiz
+        if (questions && questions.length > 0) {
+            let quiz = await Quiz.findOne({ subjectId, chapterId });
+            
+            const formattedQuestions = questions.map((q, i) => ({
+                id: i + 1,
+                type: 'mcq',
+                question: q.question,
+                options: q.options,
+                correctAnswer: q.correctAnswer,
+                points: q.points || 100
+            }));
+
+            if (quiz) {
+                quiz.title = `${title} Quiz`;
+                quiz.questions = formattedQuestions;
+                await quiz.save();
+            } else {
+                quiz = await Quiz.create({
+                    subjectId,
+                    chapterId,
+                    title: `${title} Quiz`,
+                    questions: formattedQuestions,
+                    createdBy: req.user._id
+                });
+            }
+        }
+
+        res.status(200).json({
+            success: true,
+            message: 'Content uploaded successfully',
+            data: { chapter }
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message
+        });
+    }
+};
