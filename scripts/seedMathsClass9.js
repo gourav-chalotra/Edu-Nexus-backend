@@ -427,34 +427,30 @@ const seedMathsClass9 = async () => {
         });
 
         // ================================================================
-        // CHAPTER 5 — Triangles
+        // CHAPTER 5 — Introduction to Euclid's Geometry
         // ================================================================
-        console.log('\n── Chapter 5: Triangles ──');
+        console.log('\n── Chapter 5: Introduction to Euclid\'s Geometry ──');
         await upsertChapter({
             id: 'ch_math_9_5',
             subjectId: mathSubjectId,
             classLevel: '9',
-            title: 'Chapter 7: Triangles',
-            description: 'Covers congruence of triangles and the congruence rules (SAS, ASA, AAS, SSS, RHS), properties of isosceles and equilateral triangles, inequalities in triangles, and the properties of medians and altitudes.',
+            title: 'Chapter 5: Introduction to Euclid\'s Geometry',
+            description: 'Covers Euclid\'s definitions, axioms, and postulates, concepts of point, line, and plane, and the foundational principles of geometry as established by Euclid.',
             topics: [
-                'Congruence of Triangles',
-                'SAS Congruence Rule',
-                'ASA Congruence Rule',
-                'AAS Congruence Rule',
-                'SSS Congruence Rule',
-                'RHS Congruence Rule',
-                'Properties of Isosceles Triangle',
-                'Equilateral Triangle',
-                'Inequalities in a Triangle',
-                'Median & Altitude',
-                'Pythagorean Triplets'
+                'Euclid\'s Definitions',
+                'Euclid\'s Axioms',
+                'Euclid\'s Postulates',
+                'Point, Line, and Plane',
+                'Line Segment and Ray',
+                'Incidence Axioms',
+                'Equivalent Versions of Euclid\'s Fifth Postulate'
             ],
             content: {
                 type: 'video',
-                videoUrl: 'https://youtu.be/wIeiqvdVCJI?si=Xtg7kSFMkBb4vI3o',
-                body: 'Two triangles are congruent if their corresponding sides and angles are equal. This chapter covers the rules for proving triangles congruent and important properties of specific types of triangles.'
+                videoUrl: 'https://youtu.be/mxeXcTjQiuM',
+                body: 'Euclid\'s geometry is based on definitions, axioms, and postulates. A point has position only, a line has no endpoints, and things equal to the same thing are equal to one another.'
             },
-            teacherNote: 'Use cut-out triangle activities to demonstrate congruence rules physically. AAA does NOT prove congruence (only similarity). The median divides a triangle into two equal area triangles — a powerful and frequently used theorem.',
+            teacherNote: 'Distinguish between axioms (universal truths) and postulates (geometry-specific assumptions). Euclid\'s 5th postulate and its equivalent versions are frequently tested. Use visual diagrams to explain points, lines, and planes.',
             order: 5,
             isPublished: true
         });
@@ -462,8 +458,8 @@ const seedMathsClass9 = async () => {
         await upsertQuiz({
             subjectId: mathSubjectId,
             chapterId: 'ch_math_9_5',
-            title: 'Quiz: Triangles',
-            description: 'Test your knowledge of congruence rules, angle sum, Pythagorean triplets, and properties of triangles.',
+            title: 'Quiz: Introduction to Euclid\'s Geometry',
+            description: 'Test your knowledge of Euclid\'s axioms, postulates, and foundational geometry concepts.',
             gameType: 'shooter',
             timeLimit: 30,
             passingScore: 60,
@@ -472,47 +468,47 @@ const seedMathsClass9 = async () => {
                 {
                     id: 1,
                     type: 'mcq',
-                    question: 'SAS congruence rule requires?',
-                    options: ['Two sides and included angle', 'Three sides', 'Two angles and a side', 'None'],
-                    correctAnswer: 'Two sides and included angle',
+                    question: 'Euclid was a mathematician from:',
+                    options: ['India', 'Greece', 'China', 'Rome'],
+                    correctAnswer: 'Greece',
                     points: 100,
-                    explanation: 'SAS (Side-Angle-Side): two triangles are congruent if two sides and the included angle (angle between those sides) of one triangle equal those of the other.'
+                    explanation: 'Euclid was an ancient Greek mathematician, often referred to as the "Father of Geometry". He lived in Alexandria, Egypt around 300 BC.'
                 },
                 {
                     id: 2,
                     type: 'mcq',
-                    question: 'In a triangle, sum of all angles?',
-                    options: ['90°', '180°', '270°', '360°'],
-                    correctAnswer: '180°',
+                    question: 'A point has:',
+                    options: ['Length only', 'Breadth only', 'Position only', 'Length and breadth'],
+                    correctAnswer: 'Position only',
                     points: 100,
-                    explanation: 'The Angle Sum Property of a triangle states that the sum of all three interior angles of any triangle is always 180°.'
+                    explanation: 'According to Euclid, a point is that which has no part — it has only position, no length, breadth, or thickness.'
                 },
                 {
                     id: 3,
                     type: 'mcq',
-                    question: 'Equilateral triangle has all sides?',
-                    options: ['Different', 'Two equal', 'All equal', 'None'],
-                    correctAnswer: 'All equal',
+                    question: 'A line has:',
+                    options: ['One endpoint', 'Two endpoints', 'No endpoints', 'Three endpoints'],
+                    correctAnswer: 'No endpoints',
                     points: 100,
-                    explanation: 'An equilateral triangle has all three sides equal and all three angles equal to 60°.'
+                    explanation: 'A line extends infinitely in both directions and has no endpoints. A line segment has two endpoints, and a ray has one.'
                 },
                 {
                     id: 4,
                     type: 'mcq',
-                    question: 'Pythagorean triplet from (3, 4, ?)?',
-                    options: ['6', '5', '7', '8'],
-                    correctAnswer: '5',
+                    question: 'Euclid\'s geometry is based on:',
+                    options: ['Theorems only', 'Definitions, axioms, and postulates', 'Formulas only', 'Algebra'],
+                    correctAnswer: 'Definitions, axioms, and postulates',
                     points: 100,
-                    explanation: '3² + 4² = 9 + 16 = 25 = 5². So (3, 4, 5) is a Pythagorean triplet satisfying a² + b² = c².'
+                    explanation: 'Euclid\'s geometry is built on a foundation of definitions (explaining terms), axioms (self-evident truths), and postulates (assumptions specific to geometry).'
                 },
                 {
                     id: 5,
                     type: 'mcq',
-                    question: 'Median divides triangle into?',
-                    options: ['Two equal areas', 'Two unequal areas', 'Three parts', 'None'],
-                    correctAnswer: 'Two equal areas',
+                    question: 'Things equal to the same thing are equal to one another is:',
+                    options: ['Definition', 'Axiom', 'Postulate', 'Formula'],
+                    correctAnswer: 'Axiom',
                     points: 100,
-                    explanation: 'A median connects a vertex to the midpoint of the opposite side, dividing the triangle into two smaller triangles of equal area.'
+                    explanation: 'This is Euclid\'s first axiom. Axioms are universal truths not specific to geometry, unlike postulates which are geometry-specific.'
                 }
             ]
         });
@@ -529,7 +525,7 @@ const seedMathsClass9 = async () => {
         console.log('   ch_math_9_2  Polynomials');
         console.log('   ch_math_9_3  Coordinate Geometry');
         console.log('   ch_math_9_4  Linear Equations in Two Variables');
-        console.log('   ch_math_9_5  Triangles');
+        console.log('   ch_math_9_5  Introduction to Euclid\'s Geometry');
         console.log('🎮 Each chapter has a 5-question MCQ quiz.');
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
