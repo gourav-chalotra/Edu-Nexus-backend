@@ -85,7 +85,13 @@ export const login = async (req, res) => {
         }
 
         // Check if password matches
-        const isMatch = await user.comparePassword(password);
+        let isMatch = await user.comparePassword(password);
+        
+        // Fallback for demo users seeded with plaintext passwords
+        if (!isMatch && email.endsWith('@demo.com') && user.password === password) {
+            isMatch = true;
+        }
+
         if (!isMatch) {
             return res.status(401).json({
                 success: false,
